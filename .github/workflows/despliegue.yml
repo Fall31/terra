@@ -1,4 +1,4 @@
-name:"Terraformm deploy OCI"
+name: "Terraformm deploy OCI"
 
 on:
   push:
