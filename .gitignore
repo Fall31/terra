@@ -1,0 +1,30 @@
+# Directorios locales de .terraform (contienen binarios de proveedores y módulos)
+.terraform/
+
+# Archivos de estado de Terraform (pueden contener información sensible y credenciales)
+*.tfstate
+*.tfstate.*
+
+# Archivos de registro de fallos (Crash logs)
+crash.log
+crash.*.log
+
+# Excluir todos los archivos .tfvars (suelen contener contraseñas o claves privadas)
+*.tfvars
+*.tfvars.json
+
+# Archivos de invalidación local (Overrides)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Archivos temporales de bloqueo creados por terraform apply
+.terraform.tfstate.lock.info
+
+# Archivos de configuración de la CLI de Terraform
+.terraformrc
+terraform.rc
+
+# Opcional: Ignorar archivos de planes generados manualmente (ej. terraform plan -out=tfplan)
+*tfplan*
